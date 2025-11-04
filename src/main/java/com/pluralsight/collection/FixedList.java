@@ -16,8 +16,10 @@ public class FixedList<T> {
         if (this.items.size() > maxSize) {
             return false;
         }
-        this.items.add(items);
-        return true;
+        else {
+            this.items.add(items);
+            return true;
+        }
     }
 
     public List<T> getItems() {

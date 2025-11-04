@@ -24,7 +24,5 @@ public class Main {
 
         System.out.println(localDate.getItems());
         System.out.println(localDate.getItems().size());
-
-
     }
 }
