@@ -13,7 +13,7 @@ public class FixedList<T> {
     }
 
     public boolean addItem(T items) {
-        if (this.items.size() > maxSize) {
+        if (this.items.size() >= maxSize) {
             return false;
         }
         else {
