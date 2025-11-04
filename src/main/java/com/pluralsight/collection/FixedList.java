@@ -1,26 +1,26 @@
 package com.pluralsight.collection;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FixedList<T> {
-    private Object[] items;
+    private List<T> items;
     private int maxSize;
 
     public FixedList(int maxSize) {
-        this.items = new Object[maxSize];
+        this.items = new ArrayList<>();
         this.maxSize = maxSize;
     }
 
     public boolean addItem(T items) {
-        if (Object[T] >= maxSize) {
+        if (this.items.size() > maxSize) {
             return false;
         }
-        Object[maxSize] = items;
-        items++;
+        this.items.add(items);
         return true;
     }
 
-    public Object[] getItems() {
-        return items;
+    public List<T> getItems() {
+        return this.items;
     }
 }
